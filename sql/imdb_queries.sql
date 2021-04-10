@@ -33,6 +33,7 @@ JOIN movies_directors ON directors.id = movies_directors.director_id
 JOIN movies_genres ON movies_directors.movie_id = movies_genres.movie_id
 WHERE movies_genres.genre = "Horror"
 
+
 --Names of every actor who has appeared in a movie directed by Christopher Nolan
 SELECT a.first_name, a.last_name FROM actors a
 JOIN roles r ON a.id = r.actor_id
